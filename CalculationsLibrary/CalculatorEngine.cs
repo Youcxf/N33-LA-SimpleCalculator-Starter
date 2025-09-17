@@ -12,19 +12,19 @@ namespace CalculationsLibrary
         {
             double result = 0;
 
-            if (argOperation == "+" || argOperation.ToLower() == "add")
+            if (argOperation == "+" || argOperation.ToLower() == "add" || argOperation.ToLower() == "plus")
             {
                 result = argFirstNumber + argSecondNumber;
             }
-            else if (argOperation == "-" || argOperation.ToLower() == "subtract")
+            else if (argOperation == "-" || argOperation.ToLower() == "subtract" || argOperation.ToLower() == "moins")
             {
                 result = argFirstNumber - argSecondNumber;
             }
-            else if (argOperation == "*" || argOperation.ToLower() == "multiply")
+            else if (argOperation == "*" || argOperation.ToLower() == "multiply" || argOperation.ToLower() == "multiplié par")
             {
                 result = argFirstNumber * argSecondNumber;
             }
-            else if (argOperation == "/" || argOperation.ToLower() == "divide")
+            else if (argOperation == "/" || argOperation.ToLower() == "divide" || argOperation.ToLower() == "divisé par")
             {
                 if(argSecondNumber == 0)
                 {
