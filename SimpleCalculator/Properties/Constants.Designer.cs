@@ -90,9 +90,9 @@ namespace SimpleCalculator.Properties {
         /// <summary>
         ///   Looks up a localized string similar to The operator is not valid. It must be one of the following (+, -, *, /, add, subtract, multiply, divide)..
         /// </summary>
-        internal static string OperatorRequestErrror {
+        internal static string OperatorRequestError {
             get {
-                return ResourceManager.GetString("OperatorRequestErrror", resourceCulture);
+                return ResourceManager.GetString("OperatorRequestError", resourceCulture);
             }
         }
         

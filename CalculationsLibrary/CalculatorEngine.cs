@@ -26,15 +26,17 @@ namespace CalculationsLibrary
             }
             else if (argOperation == "/" || argOperation.ToLower() == "divide" || argOperation.ToLower() == "divisé par")
             {
-                if(argSecondNumber == 0)
+                try
                 {
-                    throw new DivideByZeroException();
+                    result = argFirstNumber / argSecondNumber;
                 }
-                result = argFirstNumber / argSecondNumber;
+                catch (DivideByZeroException)
+                {
+                    throw new DivideByZeroException("Cannot divide by zero / Division par 0 est impossible");
+                }
             }
 
             return result;
         }
     }
 }
-

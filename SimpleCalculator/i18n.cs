@@ -61,7 +61,7 @@ namespace SimpleCalculator
                     operation = currentLine;
                     break;
                 }
-                Console.WriteLine(Properties.Constants.OperatorRequest);
+                Console.WriteLine(Properties.Constants.OperatorRequestError);
             }
 
             double result = engine.Calculate(operation, firstNumber, secondNumber);

@@ -126,7 +126,7 @@
   <data name="OperatorRequest" xml:space="preserve">
     <value>Enter the operator (+, -, *, /, add, subtract, multiply, divide):</value>
   </data>
-  <data name="OperatorRequestErrror" xml:space="preserve">
+  <data name="OperatorRequestError" xml:space="preserve">
     <value>The operator is not valid. It must be one of the following (+, -, *, /, add, subtract, multiply, divide).</value>
   </data>
   <data name="Result" xml:space="preserve">
