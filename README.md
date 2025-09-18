@@ -1,5 +1,5 @@
 # Lab 2 – .NET Development
-*By Youcef Si-Ramdane and Shrijan*
+*By Youcef Si-Ramdane and Shrijan Sivakolunthu*
 
 ---
 
