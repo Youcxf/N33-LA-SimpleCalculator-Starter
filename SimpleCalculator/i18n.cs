@@ -55,7 +55,7 @@ namespace SimpleCalculator
                 Console.WriteLine(Properties.Constants.OperatorRequest);
                 string currentLine = Console.ReadLine().Trim();
                 if (currentLine == "+" || currentLine == "-" || currentLine == "*" || currentLine == "/" ||
-                  currentLine == "add" || currentLine == "subtract" || currentLine == "multiply" || currentLine == "divide" ||
+                  currentLine == "add" || currentLine == "subtract" || currentLine == "multiplied by" || currentLine == "divided by" ||
                   currentLine == "plus" || currentLine == "moins" || currentLine == "multiplié par" || currentLine == "divisé par")
                 {
                     operation = currentLine;
@@ -64,8 +64,18 @@ namespace SimpleCalculator
                 Console.WriteLine(Properties.Constants.OperatorRequestError);
             }
 
-            double result = engine.Calculate(operation, firstNumber, secondNumber);
-            Console.WriteLine(Properties.Constants.Result + $" {firstNumber} {operation} {secondNumber} = {result:N2}");
+            double? result = engine.Calculate(operation, firstNumber, secondNumber);
+            
+            if(result != null)
+            {
+                Console.WriteLine("\n" + Properties.Constants.Result + $" {firstNumber} {operation} {secondNumber} = {result:N2}");
+            }
+            else
+            {
+                Console.WriteLine("\n" + Properties.Constants.ZeroError);
+            }
+
+            Console.ReadKey();
 
         }
     }

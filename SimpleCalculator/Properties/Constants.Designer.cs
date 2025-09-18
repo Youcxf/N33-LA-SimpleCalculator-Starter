@@ -79,7 +79,7 @@ namespace SimpleCalculator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Enter the operator (+, -, *, /, add, subtract, multiply, divide):.
+        ///   Looks up a localized string similar to Enter the operator (+, -, *, /, add, subtract, multiplied by, divided by):.
         /// </summary>
         internal static string OperatorRequest {
             get {
@@ -88,7 +88,7 @@ namespace SimpleCalculator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The operator is not valid. It must be one of the following (+, -, *, /, add, subtract, multiply, divide)..
+        ///   Looks up a localized string similar to The operator is not valid. It must be one of the following  (+, -, *, /, add, subtract, multiplied by, divided by)..
         /// </summary>
         internal static string OperatorRequestError {
             get {
@@ -97,7 +97,7 @@ namespace SimpleCalculator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The result of .
+        ///   Looks up a localized string similar to The result of.
         /// </summary>
         internal static string Result {
             get {
@@ -120,6 +120,15 @@ namespace SimpleCalculator.Properties {
         internal static string SecondNumberTypeError {
             get {
                 return ResourceManager.GetString("SecondNumberTypeError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot divide by zero (0).
+        /// </summary>
+        internal static string ZeroError {
+            get {
+                return ResourceManager.GetString("ZeroError", resourceCulture);
             }
         }
     }

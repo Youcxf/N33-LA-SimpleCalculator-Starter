@@ -124,18 +124,21 @@
     <value>The first input needs to be a number (e.g 6, 7, 8, ...)</value>
   </data>
   <data name="OperatorRequest" xml:space="preserve">
-    <value>Enter the operator (+, -, *, /, add, subtract, multiply, divide):</value>
+    <value>Enter the operator (+, -, *, /, add, subtract, multiplied by, divided by):</value>
   </data>
   <data name="OperatorRequestError" xml:space="preserve">
-    <value>The operator is not valid. It must be one of the following (+, -, *, /, add, subtract, multiply, divide).</value>
+    <value>The operator is not valid. It must be one of the following  (+, -, *, /, add, subtract, multiplied by, divided by).</value>
   </data>
   <data name="Result" xml:space="preserve">
-    <value>The result of </value>
+    <value>The result of</value>
   </data>
   <data name="SecondNumberRequest" xml:space="preserve">
     <value>Enter the second number: </value>
   </data>
   <data name="SecondNumberTypeError" xml:space="preserve">
     <value>The second input needs to be a number (eg, 6, 7 , 8, etc...)</value>
+  </data>
+  <data name="ZeroError" xml:space="preserve">
+    <value>Cannot divide by zero (0)</value>
   </data>
 </root>
