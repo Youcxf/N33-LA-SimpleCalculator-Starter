@@ -1,0 +1,5 @@
+Member 1 Name (Me): Youcef Si-Ramdane
+Member 2 Name (My Partner): Shrijan Sivakolunthu
+Our repository: https://github.com/Youcxf/N33-LA-SimpleCalculator-Starter
+
+Test report is in the TestReport.png
