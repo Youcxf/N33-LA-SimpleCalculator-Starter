@@ -26,7 +26,16 @@ namespace CalculationsLibrary
             }
             else if (argOperation == "/" || argOperation.ToLower() == "divided by" || argOperation.ToLower() == "divisé par")
             {
-                if(argSecondNumber == 0)
+                //try
+                //{
+                //    result = argFirstNumber / argSecondNumber;
+                //}
+                //catch (DivideByZeroException) 
+                //{
+                //    result = null;
+                //}
+
+                if (argSecondNumber == 0)
                 {
                     result = null;
                 }
@@ -34,7 +43,7 @@ namespace CalculationsLibrary
                 {
                     result = argFirstNumber / argSecondNumber;
                 }
-                
+
             }
 
             return result;
