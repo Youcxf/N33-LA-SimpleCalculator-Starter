@@ -10,25 +10,81 @@ namespace SimpleCalculator.Test.Unit
         private readonly CalculatorEngine engine = new CalculatorEngine();
 
         [TestMethod]
-        public void AddsTwoNumbersAndReturnsValidResultForNonSymbolOpertion()
+        public void AddsTwoNumbersAndReturnsValidResultForNonSymbolOperation()
         {
 
             int number1 = 1;
             int number2 = 2;
+            int expected = 3;
             double? result = engine.Calculate("add", number1, number2);
-            Assert.AreEqual(3, result);
+            Assert.AreEqual(expected, result);
 
         }
 
         [TestMethod]
-        public void AddsTwoNumbersAndReturnsValidResultForSymbolOpertion()
+        public void AddsTwoNumbersAndReturnsValidResultForSymbolOperation()
         {
 
             int number1 = 1;
             int number2 = 2;
+            int expected = 3;
             double? result = engine.Calculate("+", number1, number2);
-            Assert.AreEqual(3, result);
+            Assert.AreEqual(expected, result);
 
+        }
+        [TestMethod]
+        public void SubtractsTwoNumbersAndReturnsValidResultForNonSymbolOperation()
+        {
+            int number1 = 5;
+            int number2 = 3;
+            int expected = 2;
+            double? result = engine.Calculate("subtract", number1, number2);
+            Assert.AreEqual(expected, result);
+        }
+        [TestMethod]
+        public void SubtractsTwoNumbersAndReturnsValidResultForSymbolOperation()
+        {
+            int number1 = 5;
+            int number2 = 3;
+            int expected = 2;
+            double? result = engine.Calculate("-", number1, number2);
+            Assert.AreEqual(expected, result);
+        }
+        [TestMethod]
+        public void MultipliesTwoNumbersAndReturnsValidResultForNonSymbolOperation()
+        {
+            int number1 = 4;
+            int number2 = 3;
+            int expected = 12;
+            double? result = engine.Calculate("multiplied by", number1, number2);
+            Assert.AreEqual(expected, result);
+        }
+        [TestMethod]
+        public void MultipliesTwoNumbersAndReturnsValidResultForSymbolOperation()
+        {
+            int number1 = 4;
+            int number2 = 3;
+            int expected = 12;
+            double? result = engine.Calculate("*", number1, number2);
+            Assert.AreEqual(expected, result);
+        }
+        [TestMethod]
+        public void DividesTwoNumbersAndReturnsValidResultForNonSymbolOperation()
+        {
+            int number1 = 10;
+            int number2 = 2;
+            int expected = 5;
+            double? result = engine.Calculate("divided by", number1, number2);
+            Assert.AreEqual(expected, result);
+        }
+        [TestMethod]
+        public void DividesTwoNumbersAndReturnsValidResultForSymbolOperation()
+        {
+            int number1 = 10;
+            int number2 = 2;
+            int expected = 5;
+            double? result = engine.Calculate("/", number1, number2);
+            Assert.AreEqual(expected, result);
         }
     }
 }
