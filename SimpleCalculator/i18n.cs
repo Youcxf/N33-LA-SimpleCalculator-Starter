@@ -11,7 +11,7 @@ namespace SimpleCalculator
         {
             while(true)
             {
-               Console.WriteLine("Enter your language (en) / Entrez votre langue (fr)");
+               Console.WriteLine("Enter your language (en) / Entrez votre language (fr)");
                String language = Console.ReadLine().Trim();
 
                 if(language == "en" || language == "fr")
