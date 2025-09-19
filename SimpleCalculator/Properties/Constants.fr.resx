@@ -121,7 +121,7 @@
     <value>Entrez le premier nombre: </value>
   </data>
   <data name="FirstNumberTypeError" xml:space="preserve">
-    <value>Le premier nombre doit être des numéros (ex. 6, 7, 8, ...)</value>
+    <value>Le premier nombre doit être composé de chiffres (ex. 6, 7, 8, ...)</value>
   </data>
   <data name="OperatorRequest" xml:space="preserve">
     <value>Entrez l'opérateur (+, -, *, /, plus, moins, multiplié par, divisé par):</value>
@@ -130,15 +130,15 @@
     <value>L'opérateur n'est pas valide. Il doit être parmi les suivants (+, -, *, /, plus, moins, multiplié par, divisé par)</value>
   </data>
   <data name="Result" xml:space="preserve">
-    <value>Le résultat de</value>
+    <value>Le résultat est</value>
   </data>
   <data name="SecondNumberRequest" xml:space="preserve">
     <value>Entrez le deuxième nombre: </value>
   </data>
   <data name="SecondNumberTypeError" xml:space="preserve">
-    <value>Le deuxième nombre doit être des numéros (ex. 6, 7, 8, ...)</value>
+    <value>Le deuxième nombre doit être composé de chiffres (ex. 6, 7, 8, ...)</value>
   </data>
   <data name="ZeroError" xml:space="preserve">
-    <value>Impossible de diviser par zéro (0)</value>
+    <value>Division par zéro impossible (0)</value>
   </data>
 </root>
